@@ -1,0 +1,654 @@
+body{
+    margin: 0 auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/*Haut de page*/
+.banniere{
+    display: flex;
+    width: 100%;
+    height: 30vw;
+    background-image: url("images/Fond bannière.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: flex-start;
+}
+
+.barnav{
+    width: 100%;
+    height: 15px;
+    background-color: white;
+    box-shadow: 0 5px 20px grey;
+}
+
+footer{
+    margin-top: 150px;
+    display: flex;
+    height: 1%;
+    width: 100%;
+    font-family: 'Cambay', sans-serif;
+    color: white;
+    background-color: #98d6d3;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.regroupement {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.txt-footer{
+    width: 40%;
+    margin: 10px;
+}
+
+.logo-footer{
+
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-21.5px);
+    width: 20%;
+    height: 100%;
+    margin: 30px -10px 0 0;
+}
+
+.logo-footer img{
+    width: 70%;
+}
+
+.logo-container{
+    background-color: white;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    border: white 7px solid;
+    transform: translateY(18vw);
+    box-shadow: 0 0 15px gray;
+    margin-left: 13%;
+}
+
+.logo-container img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vw;
+}
+
+.menu-container{
+    width: 8%;
+    margin-left: 10px;
+}
+
+.pages{
+    display: flex;
+    justify-content: center;
+    margin-right: 2%;
+    width: 50%;
+    font-family: 'Blinker', sans-serif;
+}
+
+.pages a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5vw;
+    text-decoration: none;
+    color: #2bb3ac;
+    width: 10%;
+
+}
+
+.pages a:hover{
+    transform: scale(120%);
+    transition: 0.2s;
+}
+
+.menu-container:hover{
+    transform: scale(120%);
+    transition: 0.2s;
+}
+
+.dessin{
+    padding: 5% 20% 5% 5%;
+    transform: translateX(-10px);
+}
+
+.projet-illustrator{
+    padding: 5% 5% 5% 20%;
+}
+
+/*fin haut de page*/
+
+.titre{
+    font-size: 10vw;
+    margin-left: 20px;
+    margin-top: 45px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    color: #2bb3ac;
+    transform: translateX(-150%);
+    animation: dessinapparition 2s forwards;
+}
+
+.text{
+    display: flex;
+    margin: -15px 0 0 20px;
+    font-size: 3vw;
+    font-family: 'Cambay', sans-serif;
+    transform: translateX(-150%);
+    animation: dessinapparition 2s 1s forwards;
+    line-height: 100%;
+
+}
+
+.img-container{
+    display: flex;
+    flex-direction: row;
+    margin:  50px 0 0 30px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    animation: slidebas 3s;
+}
+
+.slider img{
+    width:87%;
+    display: none;
+}
+
+.slider{
+    width: 87%;
+    height: 100%;
+}
+
+.slider .active{
+    display: block;
+    animation: slide 1.5s;
+}
+
+.suivant {
+    transform: translateX(-25px);
+}
+
+.suivant img{
+    margin-left: 5px;
+}
+
+.precedent{
+    margin-right: 15px;
+}
+
+.precedent img{
+    margin-right: 5px;
+}
+
+.bouton-nav{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 45px;
+    height: 40px;
+    background-color: #2bb3ac;
+}
+
+.bouton-nav:hover{
+    background-color: #98d6d3;
+}
+
+/*dessin.html*/
+.dessin-container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px grey;
+}
+
+
+.lien-dessin{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    transform: translateX(-150%);
+    animation: dessinapparition 3s 2s forwards;
+}
+
+#d1{
+    animation: dessinapparition 1.5s 1s forwards;
+}
+
+#d2{
+    transform: translateX(150%);
+    animation: dessinapparition 1.5s 1.5s forwards;
+}
+
+#d3{
+    animation: dessinapparition 1.5s 2s forwards;
+}
+
+#d4{
+    transform: translateX(150%);
+    animation: dessinapparition 1.5s 2.5s forwards;
+}
+
+#d5{
+    animation: dessinapparition 1.5s 3s forwards;
+}
+
+#d6{
+    transform: translateX(150%);
+    animation: dessinapparition 1.5s 3.5s forwards;
+}
+
+/*--------------*/
+
+#p1{
+    animation: dessinapparition 1.5s 1s forwards;
+}
+
+#p2{
+    transform: translateX(150%);
+    animation: dessinapparition 1.5s 1.5s forwards;
+}
+
+#p3{
+    animation: dessinapparition 1.5s 2s forwards;
+}
+
+#p4{
+    transform: translateX(150%);
+    animation: dessinapparition 1.5s 2.5s forwards;
+}
+
+#p5{
+    animation: dessinapparition 1.5s 3s forwards;
+}
+
+#p6{
+    transform: translateX(150%);
+    animation: dessinapparition 1.5s 3.5s forwards;
+}
+
+#p7{
+    animation: dessinapparition 1.5s 4s forwards;
+}
+
+#p8{
+    transform: translateX(150%);
+    animation: dessinapparition 1.5s 4.5s forwards;
+}
+
+#p9{
+    animation: dessinapparition 1.5s 5s forwards;
+}
+
+#p9 .corps{
+    height: 215vw;
+}
+
+.regrouper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.click-dessin{
+    text-decoration: none;
+    color: black;
+    transform: translateX(-150%);
+    padding: 20px;
+    width: 90%;
+
+}
+
+.corps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 70vw;
+    box-shadow: 0 5px 20px grey;
+}
+
+.b1{
+    width: 50%;
+    margin: 10px;
+}
+
+.b2{
+    font-family: 'Cambay', sans-serif;
+    font-size: 3vw;
+    width: 50%;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.b1 img{
+    width: 100%;
+}
+
+.special .b1 img{
+    display: none;
+}
+
+.special .b1 .show{
+    display: block;
+}
+
+.img-dessin{
+    width: 30%;
+    height: 90%;
+    font-size: 3vw;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.text-dessin{
+    width: 50%;
+    font-size: 4vw;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.images-dessin{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images-dessin img{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background-color: blue;
+}
+
+.sous-titre{
+    margin-left: 10px;
+    font-size: 6vw;
+}
+
+.materiels{
+    font-size: 4vw;
+}
+
+.contenu{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1080px) {
+    .banniere{
+        height: 10vw;
+        justify-content: flex-start;
+    }
+
+    .logo-container{
+        background-color: white;
+        width: 17vw;
+        height: 17vw;
+        border: white 15px solid;
+        transform: translateY(4vw);
+        margin-left: 10%;
+        box-shadow: 0 0 20px grey;
+
+    }
+
+    .barnav{
+        height: 40px;
+        box-shadow: 0 4px 20px grey;
+    }
+
+    .pages a{
+        font-size: 3vw;
+        width: 30%;
+    }
+
+    .pages{
+        width: 20%;
+        margin-right: 46%;
+    }
+
+    nav{
+        height: 7vw;
+    }
+
+    .menu-container{
+        width: 4%;
+        margin-left: 3%;
+    }
+
+    .titre{
+        font-size: 5vw;
+        margin-top: 8%;
+        margin-left: 3%;
+    }
+
+    .text{
+        font-size: 2vw;
+        margin-left: 3%;
+        width: 60%;
+    }
+
+    .slider{
+        width: 80%;
+    }
+
+    .img-container{
+        width: 50%;
+        margin-top: 5.75%;
+        transform: translateY(-11%);
+    }
+
+    .contenu{
+        flex-direction: row;
+
+    }
+
+    footer{
+        margin-top: 150px;
+        display: flex;
+        height: 1%;
+        width: 100%;
+        font-family: 'Cambay', sans-serif;
+        color: white;
+        background-color: #98d6d3;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .regroupement {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .txt-footer{
+        width: 40%;
+        margin: 10px;
+    }
+
+    .logo-footer{
+        display: flex;
+        justify-content: flex-end;
+        width: 38%;
+        height: 100%;
+        transform: translateY(-35px);
+        margin-left: 154px;
+    }
+
+    .logo-footer img{
+        width: 15%;
+    }
+
+    .regroup2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dessin-container{
+        padding: 20px;
+    }
+
+    .img-dessin{
+        width: 40%;
+        height: 40%;
+        font-size: 3vw;
+        background-color: orange;
+        border-radius: 10px;
+    }
+
+    .suivant {
+        margin-left: 15px;
+        transform: translateX(-70px);
+    }
+
+    .suivant img{
+        margin-left: 5px;
+    }
+
+    .precedent{
+        margin-right: 15px;
+    }
+
+    .precedent img{
+        margin-right: 5px;
+    }
+
+    .bouton-nav{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        background-color: #2bb3ac;
+    }
+
+    .regrouper{
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+    .click-dessin{
+        text-decoration: none;
+        color: black;
+        transform: translateX(-150%);
+        padding: 20px;
+        width: 50%;
+
+    }
+
+    .corps{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 20px;
+        width: 100%;
+        height: 35vw;
+        box-shadow: 0 5px 20px grey;
+    }
+
+    .b1{
+        align-content: flex-start;
+    }
+
+    .b2{
+        width: 50%;
+        font-size: 2vw;
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .b1 img{
+        width: 100%;
+    }
+
+    .special .b1 img{
+        width: 50%;
+        display: block;
+    }
+
+    .special .b1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #p6 .b1{
+        flex-direction: column;
+    }
+
+    #p6 .b1 img{
+        width: 100%;
+    }
+
+    #p9 .corps{
+        height: 120vw;
+    }
+
+    #specialregroup{
+        justify-content: flex-start;
+    }
+
+
+}
+
+@keyframes dessinapparition {
+    from{
+
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slidebas {
+    from{
+        transform: translateX(150%);
+    }
+    50%{
+        transform: translateX(150%);
+    }
+    to{
+
+    }
+}
+
+@keyframes slide {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
